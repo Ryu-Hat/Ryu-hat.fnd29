@@ -1,0 +1,116 @@
+
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+nav ul ul{
+	display: block;
+}
+
+nav ul li{
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #0d0015;
+	padding:20px 35px;
+	transition:all .3s;
+}
+
+nav ul li li a{
+	padding:10px 35px;
+}
+
+nav ul li a:hover{
+	color:#0d0015;	
+}
+
+nav li.headerNavMenuItem ul{
+	position: absolute;
+	left:0;
+	top:62px;
+	z-index: 4;
+	background:rgba(100, 145, 200, 0.1);
+	width:180px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s;
+}
+
+nav li.headerNavMenuItem:hover > ul,
+nav li.headerNavMenuItem ul li:hover > ul,
+nav li.headerNavMenuItem:active > ul,
+nav li.headerNavMenuItem ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+nav li.headerNavMenuItem ul li a{
+	color: #0d0015;
+	border-bottom:solid 1px #f7fcfe;
+}
+
+nav li.headerNavMenuItem ul li:last-child a{
+	border-bottom:none;
+}
+
+nav li.headerNavMenuItem ul li a:hover,
+nav li.headerNavMenuItem ul li a:active{
+	background:rgba(100, 145, 200, 0.1);
+}
+
+
+.tabArea{
+    width: 70%;
+}
+
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tab li{
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tab li a{
+	display: block;
+    border-top:transparent 1px solid;
+    border-right:#f7fcfe 1px solid;
+    border-left:transparent 1px solid;
+	padding:8px 30px;
+    background:#d9d9d9;
+}
+
+
+.tab li.active a{
+    background: #f7fcfe;
+    border-top:#0d0015 1px solid;
+	border-color:#0d0015;
+}
+
+.area {
+	display: none;
+	opacity: 0;
+    padding: 20px 40px;
+}
+
+.area.isActive {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
