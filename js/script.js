@@ -26,16 +26,3 @@ document.querySelectorAll(".tab a").forEach(link => {
         gethashID(idName);
     });
 });
-
-// window.addEventListener("load", function() {
-//     let firstTabLi = document.querySelector(".tab li:first-of-type");
-//     if (firstTabLi) {
-//         firstTabLi.classList.add("active");
-//     }
-//     let firstArea = document.querySelector(".area:first-of-type");
-//     if (firstArea) {
-//         firstArea.classList.add("isActive");
-//     }
-//     let hashName = location.hash;
-//     gethashID(hashName);
-// });
