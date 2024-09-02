@@ -95,7 +95,17 @@ h1 {
     padding: 20px;
 }
 
+.mainCard .mainCardSubject .mainCardSubjectExplain{
+    padding-left: 0px;
+}
 
+.mainCard .mainCardSubject h3{
+    padding: 40px 0 0 20px ;
+}
+
+.mainCard .mainCardSubject p{
+    padding-left: 40px;
+}
 
 .mainCard .mainCardArticle{
     display: flex;
@@ -104,10 +114,6 @@ h1 {
     padding:10% 0 0 10%;
     position: relative;
     gap: 20px;
-}
-
-.mainCard .mainCardArticle::after{
-    opacity: 0;
 }
 
 .mainCard .mainCardArticle section{
